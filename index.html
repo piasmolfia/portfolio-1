@@ -42,7 +42,7 @@
       line-height: 35px;
       }
       .project1{
-        position: absolute;
+      position: absolute;
       width: 500px;
       height: 321px;
       left: 136px;
@@ -50,8 +50,12 @@
       border: 1px solid #000000;
       box-sizing: border-box;
       border-radius: 35px;
+      background-color: transparent;
       }
+     
       .project2{
+        background-color: transparent;
+      perspective: 1000px; 
       position: absolute;
       width: 500px;
       height: 321px;
@@ -63,7 +67,7 @@
       }
       .project3
       {
-        position: absolute;
+      position: absolute;
       width: 500px;
       height: 321px;
       left: 426px;
@@ -74,7 +78,7 @@
       }
 
       .borrowing{
-       position: absolute;
+      position: absolute;
 
       font-family: Roboto;
       font-style: normal;
@@ -82,8 +86,55 @@
       font-size: 40px;
       line-height: 47px;
       text-align: center;
-
       }
+
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+     transform-style: preserve-3d;
+      }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .project1:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-box-front {
+      background-color: #bbb;
+      color: black;
+      background-image: url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+      width: 500px;
+      height: 321px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 35px
+    }
+
+    /* Style the back side */
+    .flip-box-back {
+      background-color: #E3C1A2;
+      padding: 20px;
+      color: black;
+      transform: rotateY(180deg);
+      width: 500px;
+      height: 321px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 35px
+        }
 
     </style>
 
@@ -120,8 +171,18 @@
   
         <h1 class = "intro">Hi, my name is Sophia. I am a user experience designer.</h1>
         <h3 class = "look">View some of my projects here!</h3>
-    <div class = "project1 borrowing"><a href = "borrowingApp.html">Borrwing Clothes App</div>
-    <div class = "project2"> </div>
+<div class="project1">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <a href = "borrowingApp.html">
+        </div>
+        <div class="flip-box-back">
+          <h2>Borrowing Clothes App</h2>
+          <p></p>
+        </div>
+    </div>
+</div>
+      
     <div class = "project3 container"> </div>
 
       <!--<article style = "padding:10px;float: left; width:40%">
