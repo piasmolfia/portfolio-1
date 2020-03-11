@@ -7,25 +7,39 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+      body{
+        background-color: #FFFFFF;
+      }
+      .rec{
+        position: absolute;
+      width: 100%;
+      height: 100px;
+      left: 0px;
+      top: 0px;
+      background: #B96060;
+      }
+      .intro{
+        position: absolute;
+      height: 52px;
+      left: 250px;
+      top: 182px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 35px;
+      }
+      .col-4{
+        top: 200px;
+      }
+
+    </style>
 
     <title>About me</title>
-    <style type="text/css">
-      img{
-        position: absolute;
-        left: 100px;
-        top: 200px;
-        z-index: -1;
-      }
-      div img {
-        position: absolute;
-        left: 400px;
-        top: 200px;
-        z-index: -1;
-        clip: rect(15px,400px,300px,150px);
-      }
-    </style>
   </head>
-  <body style = "background-color: #baa773">
+  <body style = "margin-bottom: 100px">
+    <div class = "rec"></div>
     <div class = "container">
     <div class = "row" style="padding-top: 30px" >
       <div class="col-12">
@@ -38,13 +52,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-               <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px; color: #9c750b"> About Me! </a>
+               <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px"> About Me! </a>
               </li>
               <li class="nav-item">
-                <a class = "nav-item nav-link active" href = "index.html" style = "padding-left: 20px; color: #9c750b"> Projects <span class = "sr-only">(current)</span></a>
+                <a class = "nav-item nav-link active" href = "projects.html" style = "padding-left: 20px"> Projects <span class = "sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class = "nav-item nav-link" target = "_blank" href = "index.html" style = "padding-left: 20px; color: #9c750b"> Resume </a>
+                <a class = "nav-item nav-link" target = "_blank" href = "index.html" style = "padding-left: 20px"> Resume </a>
               </li>
             </ul>
           </div>
@@ -52,21 +66,18 @@
       </div>
     </div>
   </div>
-  <section class="container">
-     <article style = "padding:30px; text: 300px; float: left; width:60%;">
-        <h3 style = "line-height: 1; text-align: center">Click to see some of my most current projects</h3>
-      </article>
+  
+        <h1 class = "intro">View some of my projects here!</h1>
+    <div class="row">
+      <div class="col-4"> <img src = "IMG_2446.JPG" height = "300px"></div>
+      <div class="col-4"> <img src = "IMG_2446.JPG" height = "300px"></div>
+      <div class="col-4"> <img src = "IMG_2446.JPG" height = "300px"></div>
+    </div>
+  
       <!--<article style = "padding:10px;float: left; width:40%">
         <img src = "IMG_1668[3250].jpg" style = "height: 500px;">
       </article> -->
-  </section>
-        <a href="borrowing.html"> 
-    <img src = "https://media.treehugger.com/assets/images/2020/01/clothes_in_a_pile.jpeg.860x0_q70_crop-scale.jpg" width="400px"> </a>
 
-  <div class = "crop">
-
-    <img src = "https://images.squarespace-cdn.com/content/v1/541c0b85e4b03f1e8810dfc9/1562324988658-Y3TYATG7CXT5JJDW551O/ke17ZwdGBToddI8pDm48kOrmWGHb03nzwc4W1nKV7FIUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dnS2h5LEY0WtYx9R4lbXnqfxRyuArMDVpduMtKJHm3CcW07ycm2Trb21kYhaLJjddA/spotify-playlist?format=2500w" width = "500px">
-  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
