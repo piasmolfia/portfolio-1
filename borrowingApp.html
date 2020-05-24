@@ -35,53 +35,36 @@
         line-height: 53px;
       }
       .nom{
-        position: absolute;
         width: 450px;
         height: 5px;
-        left: 150px;
-        top: 225px;
         background: #FEDC85;
       }
       h4{
-        position: absolute;
         height: 44px;
-        left: 75px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
         line-height: 35px;
       }
+
       h5{
-        position: absolute;
-        width: 900px;
         height: 42px;
-        left: 117px;
-        top: 435px;
         font-family: Roboto;
         font-style: italic;
         font-size: 25px;
         line-height: 35px;
       }
-      h6{
-        position: absolute;
-        width: 1000px;
-        height: 42px;
-        left: 117px;
-        top: 440px;
-        font-family: Roboto;
-        font-size: 20px;
-        line-height: 35px;
-      }
+
       p{
-        position: absolute;
         width: 1000px;
-        height: 42px;
-        left: 125px;
-        top: 530px;
         font-family: Roboto;
         font-size: 19px;
         line-height: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
       }
      
       .wording{
@@ -102,6 +85,36 @@
         position: absolute;
         left: 150px;
       }
+       @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+    .jumbotron {
+      padding-top: 35px;
+      padding-bottom: 35px;
+     position: center;
+      margin-bottom: 0;
+      background-color: #fffaff;
+    }
+
+    @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+    }
+    .jumbotron h1 {
+        font-weight: 600;    }
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    }
+
     </style>
 
     <title> Borrow N' Go</title>
@@ -135,146 +148,170 @@
     </div>
   </div>
   
-        <h1 class = "borrowing"> Borrowing Clothes Mobile App</h1>
-        <div class = "nom"></div>
-        <img src="slide.jpg" style="height: 500px; position: absolute; top: 275px; left: 300px">
-        <h4 style="position: absolute; top: 800px; left: 150px">Overview</h4>
-        <p style="position: absolute; top: 850px; left: 150px">Borrow N Go is a mobile app that allows users to borrow clothes from users near them, providing a more eco-friendly and economical way for users to wear the clothes they want. Over the course of 10 weeks, my team and I worked together to create a mobile web app . This project was made in an interactive design     class taught by Scott Klemmer. <br> <br> 
-          <span style=" font-size: 18px">Team: <span style="color: #707070">  Tin Phan, Sophia Dominguez, Kristine Marie Baluyot </span> <br>
-          Tools: <span style="color: #707070">Figma, HTML, CSS, JavaScript, Onsen UI, Bootstrap, NodeJs, Firebase, Heroku, Adobe XD, Firebase </span>
-        </p>
+  <div class="jumbotron container">
+    <h1 class = "borrowing"> Borrowing Clothes Mobile App</h1> <br> <br> <br>
+    <img src="slide.jpg" style="height: 500px;" class="center">
+  </div>
 
-        <div>
-          <h4 style="position: absolute;top: 1075px; left: 150px">Problem Statement</h4>
-          <p style="position: absolute; top: 1175px; left: 150px">Problem statement three ish lines> </p>
-        </div>
+  <div class="container jumbotron">
+    <h4>Overview</h4>
+    <p>Borrow N Go is a mobile app that allows users to borrow clothes from users near them, providing a more eco-friendly and economical way for users to wear the clothes they want. Over the course of 10 weeks, my team and I worked together to create a mobile web app . This project was made in an interactive design class taught by Scott Klemmer. <br> <br> 
+    <span style=" font-size: 18px">Team: <span style="color: #707070">  Tin Phan, Sophia Dominguez, Kristine Marie Baluyot </span> <br>
+      Tools: <span style="color: #707070">Figma, HTML, CSS, JavaScript, Onsen UI, Bootstrap, NodeJs, Firebase, Heroku, Adobe XD, Firebase </span>
+    </p>
+  </div>
 
-        <div>
-          <h4 class = "g" style="top: 1325px">User Research/ Needfinding</h4>
-          <p class="g" style="top: 1375px">Inspiration: After listening to many friends complaints, I noticed that there was a need for a clothes lending system. As a university student with friends in different clubs and activities, many people around me kept running into the same problem, they needed to borrow a certain clothing item. People needed something to complete their halloween outfits, or a new dress for a party next weekend or a white shirt for their group picture. <br>
-          As a society, clothing is a source of waste. The average person spends $161 dollars on clothes a month.<sup><a href="https://financialbestlife.com/how-much-should-i-spend-on-clothing/" id="ref1">1</a></sup>  The average American only wears 20% of their closet on a daily basis. <sup><a href="https://www.thecut.com/2013/04/you-only-wear-20-percent-of-your-wardrobe.html" id="ref2">2</a></sup> Fast Fashion offers a semi-cheap solution, but at the same time it is killing our planet. 85% of our clothes ends up in the landfill, and it breaks down into microfibers that pollute our water. <sup><a href="https://scienceline.org/2018/06/the-troubled-second-life-of-donated-clothes/" id="ref3">3</a></sup> </p>
+  <div class="container jumbotron">
+    <h4>Problem Statement</h4>
+    <p>Problem statement three ish lines <br> Second line <br> third line </p> 
+  </div>
+        
+  <div class = "container jumbotron">
+    <h4>User Research/ Needfinding</h4>
+        <p>Inspiration: After listening to many friends complaints, I noticed that there was a need for a clothes lending system. As a university student with friends in different clubs and activities, many people around me kept running into the same problem, they needed to borrow a certain clothing item. People needed something to complete their halloween outfits, or a new dress for a party next weekend or a white shirt for their group picture. <br>
+          As a society, clothing is a source of waste. The average person spends $161 dollars on clothes a month.<sup><a href="https://financialbestlife.com/how-much-should-i-spend-on-clothing/" id="ref1">1</a></sup>  The average American only wears 20% of their closet on a daily basis. <sup><a href="https://www.thecut.com/2013/04/you-only-wear-20-percent-of-your-wardrobe.html" id="ref2">2</a></sup> Fast Fashion offers a semi-cheap solution, but at the same time it is killing our planet. 85% of our clothes ends up in the landfill, and it breaks down into microfibers that pollute our water. <sup><a href="https://scienceline.org/2018/06/the-troubled-second-life-of-donated-clothes/" id="ref3">3</a></sup> </p> 
+  </div>
 
-        </div>
+  <div class = "container jumbotron">
+    <h4>User Personas</h4>
+    <img src="Personas3.jpg" style = "width: 700px; left: 325px " class="center">
+  </div>
 
-        <div>
-          <h4 class = "g" style="top: 1640px">User Personas</h4>
-          <img src="Personas3.jpg" class="g" style="top: 1690px; width: 700px; left: 325px ">
-        </div>
+  <div class = "container jumbotron">
+    <h4>Competitive audit</h4>
+    <p>Why choose us over our competitors: Unlike other clothing options, our app does not require users to spend money. Buying new clothes can be expensive, non eco-friendly, and can take up so much space in your closet. Renting clothes, although eco-friendly, requires the user to spend money. They spend less than if they bought it, but they are still spending a monthly amount on clothes they do not get to keep. Our app meets users needs while keeping costs low.</p>
+    <img src="Untitled-3.jpg" style="width: 1000px; left: 175px" class="center">
+  </div>
+    
+  <div class="container jumbotron">
+    <h4>Storyboards</h4>
+    <p>As a team, after seeing that there was a need, created different storyboards for different problems presented. </p>
+    <div class="row">
+      <div class="col-sm">
+        <img src="Storyboard.jpg" style="width: 500px">
+        <p style=" font-size: 16px; line-height: 20px">In our first scenario, we have Kevin. He wants to buy new shoes but they are pretty pricey. He wants to try them out and see if he could really see himself wearing them before committing to such a decision. Renting them will take away from his shoe budget but he does not want to buy shoes again for them to just sit in his closet like his previous pairs. Kevin’s problem is solved by our app, as he can borrow the shoes he wants at no monetary cost to him and make a better informed decision. This storyboard, the user’s main need, was an economical way to make a better informed purchasing decision. </p>
+      </div>
+      <div class= "col-sm">
+        <img src="storyboard_2.jpg" style=" width: 500px;">
+        <p style=" font-size: 16px; line-height: 20px;">In Scenario #2, we have Helen whose job requires her to keep up with the trends. She does not have a big budget for clothes due to her salary and all of the renting clothes companies do not carry the styles she wants. Her problem is solved by our app, as she finds the variety she was looking for. Here the user’s main need was an economical way to keep up with fashion with a wide range of options to choose from. </p>
+      </div>
+    </div>
+  </div>
 
-        <div>
-          <h4 class = "g" style="top: 2450px">Competitive audit</h4>
-          <p class="g" style="top: 2500px">Why choose us over our competitors: Unlike other clothing options, our app does not require users to spend money. Buying new clothes can be expensive, non eco-friendly, and can take up so much space in your closet. Renting clothes, although eco-friendly, requires the user to spend money. They spend less than if they bought it, but they are still spending a monthly amount on clothes they do not get to keep. Our app meets users needs while keeping costs low.</p>
-        </div>
-        <img src="Untitled-3.jpg" style="position: absolute; top: 2675px; width: 1000px; left: 175px">
-
-        <div>
-          <h4 class = "g" style="top: 3150px">Storyboards</h4>
-          <p class="g" style="top: 3200px">As a team, after seeing that there was a need, created different storyboards for different problems presented. </p>
-          <img src="Storyboard.jpg" style="top: 3250px; width: 500px" class="g">
-          <img src="storyboard_2.jpg" style="top: 3250px; width: 500px; position: absolute; left: 700px" >
-          <p class="g" style="top: 3550px; width: 500px; font-size: 16px; line-height: 20px">In our first scenario, we have Kevin. He wants to buy new shoes but they are pretty pricey. He wants to try them out and see if he could really see himself wearing them before committing to such a decision. Renting them will take away from his shoe budget but he does not want to buy shoes again for them to just sit in his closet like his previous pairs. Kevin’s problem is solved by our app, as he can borrow the shoes he wants at no monetary cost to him and make a better informed decision. This storyboard, the user’s main need, was an economical way to make a better informed purchasing decision. </p>
-          <p class="g" style="top: 3550px; width: 500px; font-size: 16px; line-height: 20px; left: 700px">In Scenario #2, we have Helen whose job requires her to keep up with the trends. She does not have a big budget for clothes due to her salary and all of the renting clothes companies do not carry the styles she wants. Her problem is solved by our app, as she finds the variety she was looking for. Here the user’s main need was an economical way to keep up with fashion with a wide range of options to choose from. </p>
-        </div>
-
-        <div>
-          <h4 class = "g" style="top: 3775px">Low-Fidelity Prototypes</h4>
-          <h5 class="g" style="top: 3825px">Sketches</h5>
-          <p class="g" style="top: 3855px; font-size: 16px; line-height: 20px">We first created some digital sketches. Here we decided the important features our app needed and the flow of our app we wanted our users to follow.</p>
-          <img src="sketches.png" style="top: 3890px; position: absolute; left: 325px; width: 700px; height: 1000px" >
-          <p class="g" style="top: 4890px; font-size: 17px; line-height: 20px">We then created some digital wireframes on Adobe XD of our two main pages. Using these wirefames, we were able to visualize our app better.</p>
-          <img src="wireframe.png" class="g" style="position: absolute; top: 4950px; height: 500px; left: 400px; border: 2px solid black">
-          <img src="wireframe2.png" class="g" style="position: absolute; top: 4950px; height: 500px; left: 700px; border: 2px solid black">
-          <h5 class="g" style="top: 5490px">Bare Bones</h5>
-          <p class="g" style="top: 5540px; font-size: 17px; line-height: 20px"> We then created a semi-functional prototype using an open-source UI framework called Onsen UI. In this prototype, we focused more on the basic functionality rather than the aesthetics. <a href="https://a6-borrowclothes.herokuapp.com/">Link to this prototype.</a></p>
-          <img src="home.PNG" class="g" style="position: absolute; top: 5600px; height: 400px; left: 180px; border: 2px solid black">
-          <img src="add.PNG" class="g" style="position: absolute; top: 5600px; height: 400px; left: 430px; border: 2px solid black">
-          <img src="noti.PNG" class="g" style="position: absolute; top: 5600px; height: 400px; left: 680px; border: 2px solid black">
-          <img src="closet.PNG" class="g" style="position: absolute; top: 5600px; height: 400px; left: 930px; border: 2px solid black">
-          <p class="g" style="top: 6020px; font-size: 17px; line-height: 20px">  How it works: you find a clothing item you want to borrow on the home page, and you click on it and request to borrow it. From there you wait to see if the user will accept or decline your request. If they accept it, you can message them on how to exchange the item. Here we made some design changes based on our coding abilities, like adding a nav bar instead of a swipeable separation between apparel and shoes. <br> <br>
+  <div class="container jumbotron">
+    <h4>Low-Fidelity Prototypes</h4>
+    <h5>Sketches</h5>
+    <p style="top: font-size: 16px; line-height: 20px">We first created some digital sketches. Here we decided the important features our app needed and the flow of our app we wanted our users to follow.</p> <br>
+    <img src="sketches.png" style="width: 700px; height: 1000px" class="center"> <br>
+    <p style=" font-size: 17px; line-height: 20px">We then created some digital wireframes on Adobe XD of our two main pages. Using these wirefames, we were able to visualize our app better.</p> <br>
+    <div class="row">
+      <div class="col-sm" style="padding-left: 200px">
+        <img src="wireframe.png" style=" height: 500px; left: 400px; border: 2px solid black">
+      </div>
+      
+      <div class="col-sm">
+            <img src="wireframe2.png" style=" height: 500px; left: 700px; border: 2px solid black">
+      </div>
+    </div>
+    <br>
+    
+    <h5>Bare Bones</h5> <br>
+    <p style="font-size: 17px; line-height: 20px"> We then created a semi-functional prototype using an open-source UI framework called Onsen UI. In this prototype, we focused more on the basic functionality rather than the aesthetics. <a href="https://a6-borrowclothes.herokuapp.com/">Link to this prototype.</a></p> <br> 
+    <div style="padding-left: 80px">
+      <img src="home.PNG" style="height: 400px; border: 2px solid black">
+      <img src="add.PNG" style="height: 400px; border: 2px solid black">
+      <img src="noti.PNG" style="height: 400px; border: 2px solid black">
+      <img src="closet.PNG" style="height: 400px; border: 2px solid black">
+    </div> <br> 
+    
+      <p style="font-size: 17px; line-height: 20px">  How it works: you find a clothing item you want to borrow on the home page, and you click on it and request to borrow it. From there you wait to see if the user will accept or decline your request. If they accept it, you can message them on how to exchange the item. Here we made some design changes based on our coding abilities, like adding a nav bar instead of a swipeable separation between apparel and shoes. <br> <br>
             Feedback we received from the skeleton:
-            After presenting our skeleton to our peers, we received valuable feedback we implemented before user testing. One main concern that was brought up was how are we going to implement a system to keep people from just borrowing and never lending? In response to this, we decided to implement a point system that will act as an incentive to keep users engaged and to lend out items. We also received some feedback on the layout, such as separation of notifications on the notification tab and the popups. And how certain icons/wording did not fit the users’ mental models. We took the criticism into account and changed our app to better suit our users. 
-          </p>
-        </div>
+        After presenting our skeleton to our peers, we received valuable feedback we implemented before user testing. One main concern that was brought up was how are we going to implement a system to keep people from just borrowing and never lending? In response to this, we decided to implement a point system that will act as an incentive to keep users engaged and to lend out items. We also received some feedback on the layout, such as separation of notifications on the notification tab and the popups. And how certain icons/wording did not fit the users’ mental models. We took the criticism into account and changed our app to better suit our users. 
+      </p>
+  </div>
 
-        <div>
-          <h4 class = "g" style="top: 6250px">High-Fidelity Prototype</h4>
-          <img src="apparelH.jpg" style="position: absolute; top: 6300px; height: 400px; left: 180px; border: 2px solid black">
-          <img src="addH.jpg" style="position: absolute; top: 6300px; height: 400px; left: 430px; border: 2px solid black">
-          <img src="notification.jpg" style="position: absolute; top: 6300px; height: 400px; left: 680px; border: 2px solid black">
-          <img src="closetH.jpg" style="position: absolute; top: 6300px; height: 400px; left: 930px; border: 2px solid black">
-        </div>
+    <div class="jumbotron container">
+      <h4>High-Fidelity Prototype</h4>
+      <div style="padding-left: 80px">
+        <img src="apparelH.jpg" style="height: 400px; border: 2px solid black">
+        <img src="addH.jpg" style=" height: 400px; border: 2px solid black">
+        <img src="notification.jpg" style=" height: 400px; border: 2px solid black">
+        <img src="closetH.jpg" style=" height: 400px; border: 2px solid black">
+      </div>
+     </div>
 
-        <div>
-          <h4 class = "g" style="top: 6750px">User Testing</h4>
-          <p class="g" style="top: 6800px; font-size: 17px; line-height: 20px">Next, we conducted 3 in depth user tests on our high fidelity prototype. During these user tests, my team and I focused on observing users conduct specific tasks without any input. We started off by having all participants sign a consent form, then we read a script explaining to the app and then we asked users to conduct tasks on our app. We asked them to conduct tasks like add an item to your closet, and request to borrow an item. We then asked some debriefing questions to get a better sense of what was going through their minds as they conducted the tasks and their general thoughts on the app. <br> Our general findings that were consistent between all 3 participants were that: 
-            
-          </p>
-          <ul style="top: 6925px; width: 1050px" class="g">
-              <li>
-                The apparel and footwear layouts were inconsistent. The home page separated shoes and apparel through a nav bar and due to the apparel being the landing page, it looked different then the shoes tab. <br> <span style="color: white">...............................................</span>
+      <div class="jumbotron container">
+        <h4>User Testing</h4>
+        <p style="font-size: 17px; line-height: 20px">Next, we conducted 3 in depth user tests on our high fidelity prototype. During these user tests, my team and I focused on observing users conduct specific tasks without any input. We started off by having all participants sign a consent form, then we read a script explaining to the app and then we asked users to conduct tasks on our app. We asked them to conduct tasks like add an item to your closet, and request to borrow an item. We then asked some debriefing questions to get a better sense of what was going through their minds as they conducted the tasks and their general thoughts on the app. <br> Our general findings that were consistent between all 3 participants were that: </p>
+        <ul style=" width: 1050px">
+            <li>
+              The apparel and footwear layouts were inconsistent. The home page separated shoes and apparel through a nav bar and due to the apparel being the landing page, it looked different then the shoes tab. <br><br><span style="color: white">...............................................</span> 
                 <img src="trans.jpg" width="200px">
                  <img src="transition.jpg" width="200px">
                 <img src="footwear.jpg" width="200px">
-              </li>
-              <li>
-                 The app lacked feedback in certain areas, such as a verification or confirmation that an item was added to their closet successfully. 
-              </li>
-              <li>
-                The navigation on the profile page was ambiguous. The users missed the nav bar that contained the borrow and lend tabs in the notifications tab, creating some confusion. This also brought up to our attention how certain features lacked visibility.
-              </li>
-              <li>
-                Within our notification tab, we separated the different kinds of notifications on a nav bar. This hid the borrow and lend notifications, making it harder for the user to perform tasks. In our next user tests, we changed this tab to try to solve this problem. <br><span style="color: white">...............................................................</span>
-                <img src="annotated.jpg" height="200px">
-                <img src="noti.jpg" height="200px">
+            </li> <br>
+            <li>
+              The app lacked feedback in certain areas, such as a verification or confirmation that an item was added to their closet successfully. 
+            </li>
+            <li>
+              The navigation on the profile page was ambiguous. The users missed the nav bar that contained the borrow and lend tabs in the notifications tab, creating some confusion. This also brought up to our attention how certain features lacked visibility.
+            </li>
+            <li>
+              Within our notification tab, we separated the different kinds of notifications on a nav bar. This hid the borrow and lend notifications, making it harder for the user to perform tasks. In our next user tests, we changed this tab to try to solve this problem. <br><span style="color: white"> <br>...............................................................</span>
+              <img src="annotated.jpg" height="200px">
+              <img src="noti.jpg" height="200px">
 
-              </li>
-              <li>
-                And lastly, the users liked the general flow of the app. They found it simple and not overwhelming. 
-              </li>
-            </ul>
-        </div>
+            </li> <br>
+            <li>
+              And lastly, the users liked the general flow of the app. They found it simple and not overwhelming. 
+            </li>
+        </ul>
+      </div>
 
-        <div>
-          <h4 class = "g" style="top: 7575px">Alternate Designs</h4>
-          <h5 class = "g" style="top: 7625px">A/B testing</h5>
-          <p class="g" style="top: 7675px; font-size: 18px; line-height: 20px">Taking the Notifications tab and the lack of visibility of the borrow and lend tabs, we decided to conduct an A/B test. We created a different version of the notifications tab and used google analytics to randomize which user got version A or B. We distributed our app to 34 users that were interested in fashion, clothes shopping and/or have borrowed clothing from someone in the past. </p>
-          <img src="googleAna.jpg" style = "top: 7750px; width: 900px; position: absolute; left: 225px" >
-          <img src="AB.jpg" style = "top: 8250px; width: 900px; position: absolute; left: 225px" >
-          <p class="g" style="top: 8900px; font-size: 18px; line-height: 20px">We measured the amount of clicks on buttons on the borrow and lend tabs to see which version led to more views of the borrow and lend tabs. Design B had the most amount of clicks and was the preferred version by the instructor, so we went with that design. <br> Additionally we received feedback from our peers on the branding of our app, the visibility of the shoes tab and the login page. We were told that we should appeal to our target audience more by rebranding our app, focusing more on the aesthetics of it. </p>
+      <div class="jumbotron container">
+        <h4 >Alternate Designs</h4>
+        <h5>A/B testing</h5>
+        <p style=" font-size: 18px; line-height: 20px">Taking the Notifications tab and the lack of visibility of the borrow and lend tabs, we decided to conduct an A/B test. We created a different version of the notifications tab and used google analytics to randomize which user got version A or B. We distributed our app to 34 users that were interested in fashion, clothes shopping and/or have borrowed clothing from someone in the past. </p>
+        <img src="googleAna.jpg" style = " width: 900px;" class="center" >
+        <img src="AB.jpg" style = "width: 900px;"  class="center">
+        <p style=" font-size: 18px; line-height: 20px">We measured the amount of clicks on buttons on the borrow and lend tabs to see which version led to more views of the borrow and lend tabs. Design B had the most amount of clicks and was the preferred version by the instructor, so we went with that design. <br> Additionally we received feedback from our peers on the branding of our app, the visibility of the shoes tab and the login page. We were told that we should appeal to our target audience more by rebranding our app, focusing more on the aesthetics of it. </p>
 
-        </div>
+      </div>
 
-        <div>
-          <h4 class = "g" style="top: 9040px">Final Design</h4>
-          <p style="top: 9045px; position: absolute; left: 320px"> - Final Prototype <a href = "http://a10-borrowngo.herokuapp.com/">here!</a></p>
-          <img src="Homescreen.jpg" style="position: absolute; left: 150px; top: 9100px; height: 400px; border: 2px solid black">
-          <img src="Home.jpg" style="position: absolute; right: 700px; top: 9100px; height: 400px; border: 2px solid black">
-          <img src="Pop-out.jpg" style="position: absolute; left: 700px; top: 9100px; height: 400px; border: 2px solid black">
-          <img src="Re-Fi.jpg" style="position: absolute; right: 150px; top: 9100px; height: 400px; border: 2px solid black">
-          <img src="Post.jpg" style="position: absolute; left: 150px; top: 9550px; height: 400px; border: 2px solid black">
-          <img src="borrow.jpg" style="position: absolute; right: 700px; top: 9550px; height: 400px; border: 2px solid black">
-          <img src="Request.jpg" style="position: absolute; left: 700px; top: 9550px; height: 400px; border: 2px solid black">
-          <img src="lend.jpg" style="position: absolute; right: 150px; top: 9550px; height: 400px; border: 2px solid black">
-          <img src="details.jpg" style="position: absolute; left: 150px; top: 10000px; height: 400px; border: 2px solid black">
-          <img src="closetH.jpg" style="position: absolute; right: 725px; top: 10000px; height: 400px; border: 2px solid black" >
+      <div class="jumbotron container">
+          <h4>Final Design</h4>
+          <p> - Final Prototype <a href = "http://a10-borrowngo.herokuapp.com/">here!</a></p>
+          <img src="Homescreen.jpg" style="height: 400px; border: 2px solid black">
+          <img src="Home.jpg" style=" height: 400px; border: 2px solid black">
+          <img src="Pop-out.jpg" style=" height: 400px; border: 2px solid black">
+          <img src="Re-Fi.jpg" style="top: 9100px; height: 400px; border: 2px solid black">
+          <img src="Post.jpg" style="height: 400px; border: 2px solid black">
+          <img src="borrow.jpg" style=" height: 400px; border: 2px solid black">
+          <img src="Request.jpg" style=" height: 400px; border: 2px solid black">
+          <img src="lend.jpg" style=" height: 400px; border: 2px solid black">
+          <img src="details.jpg" style=" height: 400px; border: 2px solid black">
+          <img src="closetH.jpg" style=" height: 400px; border: 2px solid black" >
 
 
-         <iframe style = "width:560px; height: 315px; top: 10000px; position: absolute; left: 640px" src="https://www.youtube.com/embed/VPfX3QV-WZ8?start=28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe style = "width:560px; height: 315px;" src="https://www.youtube.com/embed/VPfX3QV-WZ8?start=28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
 
-        </div>
-          <h4 class = "g" style="top: 10480px">Publicizing our App</h4>
-          <p style="top: 10520px; position: absolute; left: 150px"> After we made our final changes, my team and I publized our app on our social media to invite people to view our app and give us general feedback on what they thought of it. We received a lot of positive feedback about our app and user’s liked the general idea. Over the course of a week we got over 120 users.</p>
-          <img src="socialCrop.jpg" style="position: absolute; left: 250px; top: 10625px; height: 400px; border: 2px solid black" >
-          <img src="insta.jpg" style="position: absolute; right: 240px; top: 10625px; height: 400px; border: 2px solid black" >
-          <img src="kristine.jpg" style="position: absolute; left: 350px; top: 11050px; height: 300px; border: 2px solid black">
-          <img src="twitter.jpg" style="position: absolute; left: 700px; top: 11050px; height: 300px; border: 2px solid black">
+      </div>
+
+      <div class="jumbotron container">
+        <h4 >Publicizing our App</h4>
+        <p> After we made our final changes, my team and I publized our app on our social media to invite people to view our app and give us general feedback on what they thought of it. We received a lot of positive feedback about our app and user’s liked the general idea. Over the course of a week we got over 120 users.</p>
+        <img src="socialCrop.jpg" style=" height: 400px; border: 2px solid black" >
+        <img src="insta.jpg" style="height: 400px; border: 2px solid black" >
+        <img src="kristine.jpg" style=" height: 300px; border: 2px solid black">
+        <img src="twitter.jpg" style="height: 300px; border: 2px solid black">
+      </div>
+          
           
         </div>
-
-        <div>
-          <h4 class = "g" style="top: 11425px">Next Steps:</h4>
-          <p class="g" style="top: 11475px">
+        <div class = "container jumbotron">
+          <h4>Next Steps:</h4>
+          <p>
             If we had more time, I would have liked to perform more user testing on our last prototype. Although we got some informal feedback, we would have liked to have done some user testing to see if the changes we made created a better user experience. We also would have liked to make the app more personalizable, for example allowing users to view clothes that interests them more on the home screen. We also would have liked to reimplement the search bar to make it easier to find an item. A long term goal would be to create different versions for different devices. Our current app is created to best be viewed on an iPhone. If we were able to do it again, we would have asked for help earlier in the process. We had a little trouble with some of the coding aspects and we would have been able to make more changes and get them tested if we had asked for help earlier. 
           </p>
         </div>
@@ -292,5 +329,3 @@
   </body>
 </html>
 
-<h4 class = "g" style="top: 1350px"></h4>
-<p class="g" style="top: "></p>
