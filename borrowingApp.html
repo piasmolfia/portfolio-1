@@ -12,17 +12,11 @@
         background-color: #fffaff;
       }
       .rec{
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      left: 0px;
-      top: 0px;
-      background: #;
+        position: absolute;
+        width: 100%;
+        height: 100px;
       }
       
-      .col-4{
-        top: 200px;
-      }
       .borrowing{
         position: absolute;
         height: 57px;
@@ -67,12 +61,12 @@
         width: 90%;
       }
 
-      li{
+      .al{
         width: 1000px;
         font-family: Roboto;
         font-size: 18px;
         line-height: 30px;
-        width: 90%;
+        width: 99%;
       }
      
       .wording{
@@ -89,10 +83,6 @@
         text-align: center;
       }
 
-      .g{
-        position: absolute;
-        left: 150px;
-      }
        @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -102,7 +92,7 @@
     .jumbotron {
       padding-top: 35px;
       padding-bottom: 35px;
-     position: center;
+      position: center;
       margin-bottom: 0;
       background-color: #fffaff;
     }
@@ -142,32 +132,34 @@
     <title> Borrow N' Go</title>
   </head>
   <body style = "margin-bottom: 100px">
-    <div class = "rec"></div>
+        <div class = "rec"></div>
     <div class = "container">
-    <div class = "row" style="padding-top: 30px" >
-      <div class="col-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href= "index.html" style="font-size: 25px"> Sophia Dominguez</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class = "row" style="padding-top: 30px" >
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-               <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px"> About Me! </a>
-              </li>
-              <li class="nav-item">
-                <a class = "nav-item nav-link active" href = "projects.html" style = "padding-left: 20px"> Projects <span class = "sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class = "nav-item nav-link" target = "_blank" href = "index.html" style = "padding-left: 20px"> Resume </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <a class="navbar-brand" href= "index.html" style="font-size: 25px"> Sophia Dominguez</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                 <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px; color: #707070"> About Me! </a>
+                </li>
+                <li class="nav-item">
+                  <a class = "nav-item nav-link active" href = "projects.html" style = "padding-left: 20px; color: #707070"> Projects <span class = "sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class = "nav-item nav-link" target = "_blank" href = "index.html" style = "padding-left: 20px; color: #707070"> Resume </a>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
       </div>
-    </div>
   </div>
   
   <div class="jumbotron container">
@@ -266,7 +258,7 @@
         <h4>User Testing</h4>
         <p style="font-size: 17px; line-height: 20px">Next, we conducted 3 in depth user tests on our high fidelity prototype. During these user tests, my team and I focused on observing users conduct specific tasks without any input. We started off by having all participants sign a consent form, then we read a script explaining to the app and then we asked users to conduct tasks on our app. We asked them to conduct tasks like add an item to your closet, and request to borrow an item. We then asked some debriefing questions to get a better sense of what was going through their minds as they conducted the tasks and their general thoughts on the app. <br> Our general findings that were consistent between all 3 participants were that: </p>
         <ul style=" width: 1050px">
-            <li>
+            <li class="al">
               The apparel and footwear layouts were inconsistent. The home page separated shoes and apparel through a nav bar and due to the apparel being the landing page, it looked different then the shoes tab. <br><br>
               <div class="row">
                 <div class = "col-sm">
@@ -282,14 +274,14 @@
                 </div>
               </div>
             </li> <br>
-            <li>
+            <li class="al">
               The app lacked feedback in certain areas, such as a verification or confirmation that an item was added to their closet successfully. 
             </li>
-            <li>
+            <li class="al">
               The navigation on the profile page was ambiguous. The users missed the nav bar that contained the borrow and lend tabs in the notifications tab, creating some confusion. This also brought up to our attention how certain features lacked visibility.
             </li>
-            <li>
-              Within our notification tab, we separated the different kinds of notifications on a nav bar. This hid the borrow and lend notifications, making it harder for the user to perform tasks. In our next user tests, we changed this tab to try to solve this problem. <br>
+            <li class="al">
+              Within our notification tab, we separated the different kinds of notifications on a nav bar. This hid the borrow and lend notifications, making it harder for the user to perform tasks. In our next user tests, we changed this tab to try to solve this problem. <br> <br>
               <div class="row">
                 <div class="col-sm">
                   <img src="annotated.jpg" width="250px" class="img-fluid filter-imageR">
@@ -301,7 +293,7 @@
               </div>
 
             </li> <br>
-            <li>
+            <li class="al">
               And lastly, the users liked the general flow of the app. They found it simple and not overwhelming. 
             </li>
         </ul>
