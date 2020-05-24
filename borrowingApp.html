@@ -66,6 +66,14 @@
         margin-right: auto;
         width: 90%;
       }
+
+      li{
+        width: 1000px;
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 30px;
+        width: 90%;
+      }
      
       .wording{
         position: absolute;
@@ -114,7 +122,21 @@
     margin-right: auto;
     width: 70%;
     }
-
+    img.filter-imageR {
+    display: block;
+    margin-left: auto;
+    margin-right: right;
+    }
+    img.filter-imageL {
+    display: block;
+    margin-left: left;
+    margin-right: auto;
+    }
+    img.filter-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
     </style>
 
     <title> Borrow N' Go</title>
@@ -205,12 +227,12 @@
     <img src="sketches.png" style="width: 700px; height: 1000px" class="center img-fluid"> <br>
     <p style=" font-size: 17px; line-height: 20px">We then created some digital wireframes on Adobe XD of our two main pages. Using these wirefames, we were able to visualize our app better.</p> <br>
     <div class="row">
-      <div class="col-sm" style="padding-left: 200px">
-        <img src="wireframe.png" style=" height: 500px; left: 400px; border: 2px solid black" class="img-fluid">
+      <div class="col-sm" style="width: 200px">
+        <img src="wireframe.png" style=" height: 500px; left: 400px; border: 2px solid black" class="img-fluid filter-imageR">
       </div>
       
-      <div class="col-sm">
-            <img src="wireframe2.png" style=" height: 500px; left: 700px; border: 2px solid black" class="img-fluid">
+      <div class="col-sm" style="width: 200px">
+            <img src="wireframe2.png" style=" height: 500px; left: 700px; border: 2px solid black" class="img-fluid filter-imageL">
       </div>
     </div>
     <br>
@@ -245,10 +267,20 @@
         <p style="font-size: 17px; line-height: 20px">Next, we conducted 3 in depth user tests on our high fidelity prototype. During these user tests, my team and I focused on observing users conduct specific tasks without any input. We started off by having all participants sign a consent form, then we read a script explaining to the app and then we asked users to conduct tasks on our app. We asked them to conduct tasks like add an item to your closet, and request to borrow an item. We then asked some debriefing questions to get a better sense of what was going through their minds as they conducted the tasks and their general thoughts on the app. <br> Our general findings that were consistent between all 3 participants were that: </p>
         <ul style=" width: 1050px">
             <li>
-              The apparel and footwear layouts were inconsistent. The home page separated shoes and apparel through a nav bar and due to the apparel being the landing page, it looked different then the shoes tab. <br><br><span style="color: white">...............................................</span> 
-                <img src="trans.jpg" width="200px" class="img-fluid">
-                 <img src="transition.jpg" width="200px" class="img-fluid">
-                <img src="footwear.jpg" width="200px" class="img-fluid">
+              The apparel and footwear layouts were inconsistent. The home page separated shoes and apparel through a nav bar and due to the apparel being the landing page, it looked different then the shoes tab. <br><br>
+              <div class="row">
+                <div class = "col-sm">
+                  <img src="trans.jpg" width="200px" class="img-fluid filter-imageR">
+                </div>
+
+                <div class = "colsm">
+                  <img src="transition.jpg" width="200px" class="filter-image">
+                </div>
+
+                <div class = "col-sm">
+                  <img src="footwear.jpg" width="200px" class="filter-imageL">
+                </div>
+              </div>
             </li> <br>
             <li>
               The app lacked feedback in certain areas, such as a verification or confirmation that an item was added to their closet successfully. 
@@ -257,9 +289,16 @@
               The navigation on the profile page was ambiguous. The users missed the nav bar that contained the borrow and lend tabs in the notifications tab, creating some confusion. This also brought up to our attention how certain features lacked visibility.
             </li>
             <li>
-              Within our notification tab, we separated the different kinds of notifications on a nav bar. This hid the borrow and lend notifications, making it harder for the user to perform tasks. In our next user tests, we changed this tab to try to solve this problem. <br><span style="color: white"> <br>...............................................................</span>
-              <img src="annotated.jpg" width="300px" class="img-fluid">
-              <img src="noti.jpg" width ="250px" class="img-fluid">
+              Within our notification tab, we separated the different kinds of notifications on a nav bar. This hid the borrow and lend notifications, making it harder for the user to perform tasks. In our next user tests, we changed this tab to try to solve this problem. <br>
+              <div class="row">
+                <div class="col-sm">
+                  <img src="annotated.jpg" width="250px" class="img-fluid filter-imageR">
+                </div>
+
+                <div class="col-sm">
+                   <img src="noti.jpg" width ="250px" class="img-fluid filter-imageL">
+                </div>
+              </div>
 
             </li> <br>
             <li>
@@ -329,20 +368,20 @@
         <h4 >Publicizing our App</h4>
         <p> After we made our final changes, my team and I publized our app on our social media to invite people to view our app and give us general feedback on what they thought of it. We received a lot of positive feedback about our app and user’s liked the general idea. Over the course of a week we got over 120 users.</p>
         <div class="row">
-          <div class="col-7">
-            <img src="socialCrop.jpg" style=" height: 400px; border: 2px solid black" class="img-fluid" >
+          <div class="col-8">
+            <img src="socialCrop.jpg" style=" height: 400px; border: 2px solid black" class="img-fluid filter-imageR" >
           </div>
-          <div class="col-5">
-            <img src="insta.jpg" style="height: 400px; border: 2px solid black" class="img-fluid">
+          <div class="col-3">
+            <img src="insta.jpg" style="height: 400px; border: 2px solid black" class="img-fluid filter-imageL">
           </div>
         </div> <br>
 
         <div class="row">
-          <div class="col-sm" style="padding-left: 200px">
-            <img src="kristine.jpg" style=" height: 300px; border: 2px solid black" class="img-fluid">
+          <div class="col-sm">
+            <img src="kristine.jpg" style=" height: 300px; border: 2px solid black" class="img-fluid filter-imageR">
           </div>
-          <div class="col-sm" style="padding-left: 0px">
-            <img src="twitter.jpg" style="height: 300px; border: 2px solid black" class="img-fluid">
+          <div class="col-sm">
+            <img src="twitter.jpg" style="height: 300px; border: 2px solid black" class="img-fluid filter-imageL">
           </div>
         </div>
         
