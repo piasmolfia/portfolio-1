@@ -31,10 +31,7 @@
       color: #707070;
       }
       .look{
-      position: absolute;
       height: 55px;
-      left: 488px;
-      top: 350px;
       font-family: Segoe UI;
       font-style: normal;
       font-weight: normal;
@@ -42,11 +39,8 @@
       line-height: 35px;
       }
       .project1{
-      position: absolute;
       width: 1000px;
       height: 275px;
-      left: 175px;
-      top: 200px;
       border: 1px solid #000000;
       box-sizing: border-box;
       border-radius: 5px;
@@ -60,11 +54,8 @@
      
       .project3
       {
-      position: absolute;
       width: 1000px;
       height: 275px;
-      left: 175px;
-      top: 500px;
       border: 1px solid #000000;
       box-sizing: border-box;
       border-radius: 5px;
@@ -96,6 +87,37 @@
       .UC{
         color: #274DB7;
       }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .jumbotron {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      margin-bottom: 0;
+      background-color: #fffaff;
+    }
+
+    .jumbotron {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+     position: center;
+      margin-bottom: 0;
+      background-color: #fffaff;
+    }
+
+    @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+    .jumbotron h1 {
+        font-weight: 400;
+        font-size: 25px;
+    }
 
     /* This container is needed to position the front and back side */
 
@@ -103,7 +125,7 @@
 
     <title>About me</title>
   </head>
-  <body style = "margin-bottom: 100px">
+  <body style = "margin-bottom: 100px">  
     <div class = "rec"></div>
     <div class = "container">
     <div class = "row" style="padding-top: 30px" >
@@ -131,11 +153,20 @@
       </div>
     </div>
   </div>
-  
-   
-    <a href = "borrowingApp.html"><img class = "project1" src="coverPage.jpg"> </a> 
+
+  <div class="container jumbotron p-4 p-md-5 " >
+
+    <a href="borrowingApp.html"> <img src="coverPage.jpg" width="1000px" class="project1"> <br> <br> <br> 
     <a href = "borrowingApp.html"> <img class = "project3" src="borrow.n.go.jpg"> </div>
-    <p style="color: white; position: absolute; top: 800px">     ...    </p>
+
+  </div>
+
+
+
+
+
+
+      
 
       <!--<article style = "padding:10px;float: left; width:40%">
         <img src = "IMG_1668[3250].jpg" style = "height: 500px;">
