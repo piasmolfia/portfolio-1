@@ -140,6 +140,11 @@
       		font-style: normal;
       		font-weight: 100;
 		}
+		#nav ul {
+		    margin: auto;
+		     overflow: hidden;
+		     width: 60%;
+		}
 
     /* This container is needed to position the front and back side */
 
@@ -150,24 +155,30 @@
   <body style = "margin-bottom: 100px">  
     <div class = "rec"></div>
     <div class = "container">
-    <div class = "row" style="padding-top: 30px" >
+    <div class = "row" style="padding-top: 40px" >
       <div class="col-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href= "index.html" style="font-size: 25px"> Sophia Dominguez</a>
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+    
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+               		<a class = "nav-item nav-link" href = "index.html" style = "padding-left: 20px; color: #707070; padding-top: 20px"> Home </a>
+              </li>
               <li class="nav-item active">
-               <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px; color: #707070"> About Me! </a>
+               <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px; color: #707070; padding-top: 20px"> About Me! </a>
+              </li>
+              <li>
+              	<a class="navbar-brand" href= "index.html" style="font-size: 30px; padding-left: 20px;color: #575556;"> Sophia Dominguez</a>
               </li>
               <li class="nav-item">
-                <a class = "nav-item nav-link active" href = "projects.html" style = "padding-left: 20px; color: #707070"> Projects <span class = "sr-only">(current)</span></a>
+                <a class = "nav-item nav-link active" href = "projects.html" style = "padding-left: 20px; color: #707070; padding-top: 20px"> Projects <span class = "sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class = "nav-item nav-link" target = "_blank" href = "RESUME_SD.pdf" style = "padding-left: 20px; color: #707070"> Resume </a>
+                <a class = "nav-item nav-link" target = "_blank" href = "RESUME_SD.pdf" style = "padding-left: 20px; color: #707070; padding-top: 20px"> Resume </a>
               </li>
             </ul>
           </div>
