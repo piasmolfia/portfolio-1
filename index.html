@@ -67,7 +67,6 @@
       {
       width:50%;
       height: 275px;
-      align-content: right;
       }
       .project4:hover {
  		 -ms-transform: scale(1.1); /* IE 9 */
@@ -121,7 +120,7 @@
 */
 		.jumbotron {
 		  padding-top: 3rem;
-		  padding-bottom: 2rem;
+		  padding-bottom: 3rem;
 		 position: center;
 		  margin-bottom: 0;
 		  background-color: #CCA69B;
@@ -145,6 +144,27 @@
 		     overflow: hidden;
 		     width: 60%;
 		}
+		 .center {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 70%;
+	    }
+	    img.filter-imageR {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: right;
+	    }
+	    img.filter-imageL {
+		    display: block;
+		    margin-left: left;
+		    margin-right: auto;
+	    }
+	    img.filter-image {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+	    }
 
     /* This container is needed to position the front and back side */
 
@@ -166,16 +186,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
-               		<a class = "nav-item nav-link" href = "index.html" style = "padding-left: 20px; color: #707070; padding-top: 20px"> Home </a>
+               		<a class = "nav-item nav-link" href = "index.html" style = "padding-left: 20px; color: #707070;"> Home </a>
               </li>
               <li class="nav-item active">
-               <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px; color: #707070; padding-top: 20px"> About Me! </a>
+               <a class = "nav-item nav-link" href = "aboutme.html" style = "padding-left: 20px; color: #707070;"> About Me! </a>
               </li>
               <li class="nav-item">
-                <a class = "nav-item nav-link active" href = "projects.html" style = "padding-left: 20px; color: #707070; padding-top: 20px"> Projects <span class = "sr-only">(current)</span></a>
+                <a class = "nav-item nav-link active" href = "projects.html" style = "padding-left: 20px; color: #707070;""> Projects <span class = "sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class = "nav-item nav-link" target = "_blank" href = "RESUME_SD.pdf" style = "padding-left: 20px; color: #707070; padding-top: 20px"> Resume </a>
+                <a class = "nav-item nav-link" target = "_blank" href = "RESUME_SD.pdf" style = "padding-left: 20px; color: #707070;"> Resume </a>
               </li>
             </ul>
           </div>
@@ -190,12 +210,12 @@
   	</div>
   </section>
 
-  <div class="container jumbotron p-4 p-md-1 ">
+  <div class="container jumbotron  ">
   	<h3 class = "look">Check out some of my work below </h3> 
 
-  	<a href="borrowingApp.html"> <img src="coverPage2.jpg"  class="project1 img-thumbnail"> <br> <br> <br> 
-  	<a href = "plannigo.html"> <img class = "project4 img-thumbnail" src="PlannigoCover.jpg"><br> <br> <br>
-  	<a href = "spotify.html"> <img class = "project3 img-thumbnail" src="Untitled-6.jpg"> 
+  	<a href="borrowingApp.html"> <img src="coverPage2.jpg"  class="project1 img-thumbnail filter-imageL"></a> <br> <br> <br> 
+  	<a href = "plannigo.html"> <img class = "project4 img-thumbnail filter-imageR" src="PlannigoCover.jpg"><br> <br> <br>
+  	<a href = "spotify.html"> <img class = "project3 img-thumbnail filter-imageL" src="Untitled-6.jpg"> 
   	 </div>
 
   </div>
@@ -211,7 +231,8 @@
         <img src = "IMG_1668[3250].jpg" style = "height: 500px;">
       </article> -->
 
-    <!-- Optional JavaScript -->
+    <!-- Optional JavaScript  p-4 p-md-1-->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
